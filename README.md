@@ -1,1 +1,93 @@
 # Learning SASS
+
+
+## Parent Selector with nesting
+
+### HTML CODE
+
+```
+<p>
+  <button class='btn btn-primary'>Click Me!</button>
+  <label>Primary</label>
+</p>
+
+<p>
+  <button class='btn btn-secondary'>Click Me!</button>
+  <label>Secondary</label>
+</p>
+
+<p>
+  <button class='btn btn-primary' disabled>Click Me!</button>
+  <label>Primary Disabled</label>
+</p>
+
+<p>
+  <button class='btn btn-secondary' disabled>Click Me!</button>
+  <label>Secondary Disabled</label>
+</p>
+```
+
+### SASS CODE
+
+```
+.btn {
+  padding: 2px 10px;
+  border: 1px solid #c46;
+  border-radius: 2px;
+
+  &.btn-primary {
+    background-color: #c46;
+    color: #fff;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: #edbcc8;
+    color: #000;
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+```
+
+
+### Produced CSS CODE
+
+```
+
+.btn {
+  padding: 2px 10px;
+  border: 1px solid #c46;
+  border-radius: 2px;
+}
+
+.btn.btn-primary {
+  background-color: #c46;
+  color: #fff;
+}
+
+.btn.btn-primary:disabled {
+  opacity: 0.5;
+}
+
+.btn.btn-secondary {
+  background-color: #edbcc8;
+  color: #000;
+}
+
+.btn.btn-secondary:disabled {
+  opacity: 0.5;
+}
+```
+
+### Screenshot
+
+<h3 align="center">Screenhot</h3>
+<p align="center">
+  <img width="500" src="screenshot/demo.png">
+</P>
+
+![nesting exercise](https://user-images.githubusercontent.com/22054464/201534299-2d685872-50a9-4b58-9652-488e2d078aa8.png)
