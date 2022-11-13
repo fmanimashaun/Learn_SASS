@@ -83,11 +83,7 @@
 }
 ```
 
-### Screenshot
-
 <h3 align="center">Screenhot</h3>
 <p align="center">
-  <img width="500" src="screenshot/demo.png">
+  <img width="500" src="screenshot/nesting_exercise.png">
 </P>
-
-![nesting exercise](https://user-images.githubusercontent.com/22054464/201534299-2d685872-50a9-4b58-9652-488e2d078aa8.png)
