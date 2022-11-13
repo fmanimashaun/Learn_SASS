@@ -35,18 +35,18 @@
   border: 1px solid #c46;
   border-radius: 2px;
 
-  &.btn-primary {
+  &.btn-primary {      /* & sign indicate parent selector */
     background-color: #c46;
     color: #fff;
-    &:disabled {
+    &:disabled {    /* & sign indicate parent selector */
       opacity: 0.5;
     }
   }
 
-  &.btn-secondary {
+  &.btn-secondary {  /* & sign indicate parent selector */
     background-color: #edbcc8;
     color: #000;
-    &:disabled {
+    &:disabled {  /* & sign indicate parent selector */
       opacity: 0.5;
     }
   }
