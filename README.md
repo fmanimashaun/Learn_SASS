@@ -1,7 +1,7 @@
 # Learning SASS
 
 
-## Parent Selector with nesting
+## Parent Selector I (Nesting)
 
 ### HTML CODE
 
